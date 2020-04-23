@@ -144,7 +144,6 @@ publishing {
     repositories {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
-            { url 'https://jitpack.io' }
         }
     }
 }
