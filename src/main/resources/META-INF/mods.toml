@@ -14,7 +14,7 @@ loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft versio
 # The modid of the mod
 modId="fieldcore" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="${0.0.6a}" #mandatory
+version="${0.0.7a}" #mandatory
  # A display name for the mod
 displayName="FieldCore" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
