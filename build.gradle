@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.15.2-0.0.5a'
+version = '1.15.2-0.0.6a'
 group = 'com.oriondev.fieldcore' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'fieldcore'
 
@@ -90,7 +90,6 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.15.2-31.1.0'
-
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
@@ -122,6 +121,7 @@ jar {
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"fieldcoresareus",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+
         ])
     }
 }
@@ -143,7 +143,8 @@ publishing {
     }
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            url "https://jitpack.io"
+            credentials { "jp_32675l2j6guuso3a9re4qnqnkc authToken" }
         }
     }
 }
