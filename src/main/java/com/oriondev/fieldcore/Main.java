@@ -1,6 +1,8 @@
 package com.oriondev.fieldcore;
 
 
+import com.oriondev.fieldcore.lists.ItemList;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,8 +23,13 @@ public class Main {
     {
         instance = this;
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::Setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::ClientSetup);
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        modEventBus.addListener(this::Setup);
+        modEventBus.addListener(this::ClientSetup);
+
+        ItemList.ITEMS.register(modEventBus);
+
     }
 
     private void Setup(final FMLCommonSetupEvent event)
