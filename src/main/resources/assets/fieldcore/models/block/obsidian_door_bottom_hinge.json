@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "fieldcore:blocks/obsidian_door_bottom",
+    "top": "fieldcore:blocks/obsidian_door_top"
+  }
+}

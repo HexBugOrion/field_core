@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "fieldcore:block/obsidian_pressure_plate" },
+    "powered=true": { "model": "fieldcore:block/obsidian_pressure_plate_down" }
+  }
+}

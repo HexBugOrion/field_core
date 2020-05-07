@@ -1,4 +1,10 @@
 {
   "item.fieldcore.iron_ore_chunk": "Iron Ore Chunk",
-  "item.fieldcore.gold_ore_chunk": "Gold Ore Chunk"
+  "item.fieldcore.gold_ore_chunk": "Gold Ore Chunk",
+
+  "block.fieldcore.obsidian_door": "Obsidian Door",
+  "block.fieldcore.obsidian_button": "Obsidian Button",
+  "block.fieldcore.obsidian_pressure_plate": "Obsidian Pressure Plate",
+
+  "enchantment.fieldcore.vaulting": "Vaulting"
 }
